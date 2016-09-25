@@ -21,12 +21,12 @@
                         <div class="flipper" onclick="this.classList.toggle('flipped')">
                                 <div class="front">
                                     <h3> </h3>
-                                    <img src="images/photo.jpg" alt="Photo" width="180px">
+                                    <img src="images/photo.jpg" alt="Photo" width="280px">
                                     <p id="bottom">Click to see more</p>
                                 </div>
                                 <div id="backone" class="back">
                                     <h3 id='flip_heading'>Viva Las Vegas</h3>
-                                    <img src="images/valleyoffire.jpg" alt="Photo" width="180px">
+                                    <img src="images/valleyoffire.jpg" alt="Photo" width="280px">
                                 </div>
                         </div>
                 </div>
@@ -36,12 +36,12 @@
                         <div class="flipper2" onclick="this.classList.toggle('flipped')">
                                 <div class="front2">
                                     <h3 id='flip_heading'>Some of my family</h3>
-                                    <img src="images/kidsSnow.jpg" alt="Photo" width="180px">
+                                    <img src="images/kidsSnow.jpg" alt="Photo" width="280px">
                                     <p id="bottom">Click to see more</p>
                                 </div>
                                 <div id="backone" class="back2">
                                     <h3 id='flip_heading'>All of my strange kids</h3>
-                                    <img src="images/strangeKids.jpg" alt="Photo" width="180px">
+                                    <img src="images/strangeKids.jpg" alt="Photo" width="280px">
                                         
                                 </div>
                         </div>

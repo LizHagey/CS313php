@@ -33,8 +33,13 @@ h1, h3 {
     color: #fff;
     float: right;
 }
+h1 {
+    font-size: 6em;
+}
+
 p {
     color: #fff;
+    font-size: 2em;
     float: right;
     width: 50%;
     text-align: right;
@@ -44,6 +49,7 @@ p {
     color: #fff;
     float: right;
     text-align: right;
+    font-size: 2em;
     list-style-type: none;
     clear: both;
 }
@@ -68,6 +74,7 @@ nav ul li:hover {
 }
 nav ul li a {
     text-decoration: none;
+    font-size: 1.6em;
     color: white;
     padding: 0px;
 }
@@ -87,8 +94,8 @@ nav ul li a {
        
 }
 .flip-container, .front, .back {
-	width: 200px;
-	height: 300px;
+	width: 300px;
+	height: 400px;
 }
 
 /* flip speed */
@@ -109,8 +116,8 @@ nav ul li a {
 
 /* front pane, placed above back */
 .front {
-        width:200px;
-        height:300px;
+        width:300px;
+        height:340px;
         padding: 10px;
         background: #003d3d;
 	z-index: 2;
@@ -135,8 +142,8 @@ nav ul li a {
 
 /* back, initially hidden pane */
 .back {
-        width:200px;
-        height:300px;
+        width:300px;
+        height:400px;
         padding-left: 10px;
         padding-right: 10px;
         background: #5b7e14;
@@ -156,7 +163,7 @@ nav ul li a {
 .back p {
     color: #fff;
     font-family: Arial;
-    font-size: .8em;
+    font-size: 1em;
     
 }
 .flipped {
@@ -185,8 +192,8 @@ nav ul li a {
 }
 
 .flip-container2, .front2, .back2 {
-	width: 200px;
-	height: 300px;
+	width: 300px;
+	height: 400px;
 }
 
 /* flip speed goes here */
@@ -207,8 +214,8 @@ nav ul li a {
 
 /* front pane, placed above back */
 .front2 {
-        width:200px;
-        height:300px;
+        width:300px;
+        height:400px;
         padding: 10px;
         background: #650000;
 	z-index: 2;
@@ -233,8 +240,8 @@ nav ul li a {
 
 /* back, initially hidden pane */
 .back2 {
-        width:200px;
-        height:300px;
+        width:300px;
+        height:400px;
         padding-left: 10px;
         background: #871616;
 	transform: rotateY(180deg);
@@ -253,7 +260,7 @@ nav ul li a {
 .back2 p {
     color: #fff;
     font-family: Arial;
-    font-size: .8em;
+    font-size: 1em;
 }
 .flipped {
   -webkit-transform:rotateY(180deg);
