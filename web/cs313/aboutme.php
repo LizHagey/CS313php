@@ -20,29 +20,33 @@
                 <div class="flip-container">
                         <div class="flipper" onclick="this.classList.toggle('flipped')">
                                 <div class="front">
-                                    <img src="images/photo.jpg" alt="Photo" width="380px">
+                                    <h3> </h3>
+                                    <img src="images/photo.jpg" alt="Photo" width="180px">
                                     <p id="bottom">Click to see more</p>
                                 </div>
                                 <div id="backone" class="back">
-                                    <h3 id='flip_heading'>About Me</h3>
-                                        <ul id='flip_list'>
-                                            <li>Senior at BYUI</li>
-                                            <li>6 Kids ages 28 to 19</li>
-                                            <li>Live in Las Vegas</li>
-                                            <li>Born in Tennessee</li>
-                                            <li>Majoring in Web Design & Development</li>
-                                        </ul>
-                                        <p id='flip_paragraph'>I love that I have learned so much in college. I have
-                                        gone from zero knowledge about programming to where I am 
-                                        now. I still have so much to learn and I am overwhelmed 
-                                        with all of the work involved but I know that the sacrifice
-                                        will be worth it in the end.</p>
+                                    <h3 id='flip_heading'>Viva Las Vegas</h3>
+                                    <img src="images/valleyoffire.jpg" alt="Photo" width="180px">
+                                </div>
+                        </div>
+                </div>
+             </div>
+         <div id='two'>
+                <div class="flip-container2">
+                        <div class="flipper2" onclick="this.classList.toggle('flipped')">
+                                <div class="front2">
+                                    <h3 id='flip_heading'>Some of my family</h3>
+                                    <img src="images/kidsSnow.jpg" alt="Photo" width="180px">
+                                    <p id="bottom">Click to see more</p>
+                                </div>
+                                <div id="backone" class="back2">
+                                    <h3 id='flip_heading'>All of my strange kids</h3>
+                                    <img src="images/strangeKids.jpg" alt="Photo" width="180px">
                                         
                                 </div>
                         </div>
                 </div>
              </div>
- 
 
         </div>
     </body>
