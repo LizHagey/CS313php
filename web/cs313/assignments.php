@@ -19,7 +19,7 @@
         <h1>Assignments</h1>
         <br>
        
-        <button><a id="assign_link" href="../team_assignment/team_readiness_activity.php">Week 3 Team Assignment</a></button>
+        <button><a id="assign_link" href="../team_readiness_activity.php">Week 3 Team Assignment</a></button>
    
         
               </div>
