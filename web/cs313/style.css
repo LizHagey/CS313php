@@ -78,6 +78,23 @@ nav ul li a {
     color: white;
     padding: 0px;
 }
+button {
+   background-color: #801815;
+   padding: 10px;
+   border: #801815;
+        -moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+      border-radius: 10px;
+   display: block;
+   float: right;
+   clear: both;
+   
+} 
+button a {
+   text-decoration: none;
+   color: #fff;
+   font-size: 1.4em;
+}
 
 
 /*Flip Animation*/
