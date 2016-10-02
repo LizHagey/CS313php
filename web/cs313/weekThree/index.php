@@ -1,7 +1,5 @@
 <?php
-// Start session management with a persistent cookie
-$lifetime = 60 * 60 * 24 * 14;    // 2 weeks in seconds
-session_set_cookie_params($lifetime, '/');
+// Start session
 session_start();
 
         $action = filter_input(INPUT_POST, 'action');
