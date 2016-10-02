@@ -19,7 +19,7 @@
         <h1>Assignments</h1>
         <br>
        
-        <button><a href="weekThree/index.php">Week 3: Survey</a></button>
+        <button><a href="weekThree/view/survey.php">Week 3: Survey</a></button>
    
         
               </div>
