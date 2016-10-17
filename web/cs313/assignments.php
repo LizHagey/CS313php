@@ -20,7 +20,7 @@
         <br>
        
         <button><a href="weekThree/view/survey.php">Week 3: Survey</a></button>
-        <button><a href="/memory">Database Access</a></button>
+        <button><a href="/web/cs313/memory/index.php">Database Access</a></button>
 
         
               </div>
