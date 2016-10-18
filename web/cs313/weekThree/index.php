@@ -11,7 +11,7 @@ session_start();
                 $born = isset($_SESSION['born'])? $_SESSION['born']: '';
                 $movie = isset($_SESSION['movie'])? $_SESSION['movie']: '';
                 $color = isset($_SESSION['color'])? $_SESSION['color']: '';
-                include('/view/survey.php');
+                include('weekThree/view/survey.php');
         }
     }
     
@@ -45,5 +45,5 @@ session_start();
         include('index.php');
         exit();
     }   
-include('/view/results.php');
+include('weekThree/view/results.php');
  }
