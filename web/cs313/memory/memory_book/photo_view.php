@@ -1,8 +1,8 @@
-<?php include 'memory/view/header.php'; ?>
+<?php include 'view/header.php'; ?>
 <main>
     <aside>
         <h3>People</h3>
-        <?php include('memory/view/people_nav.php'); ?>
+        <?php include('view/people_nav.php'); ?>
     </aside>
     <section>
         <h1 id="photoViewHeading"><?php echo $photoName; ?></h1>
@@ -26,5 +26,5 @@
         </div>
     </section>
 </main>
-<?php include '../view/footer.php'; ?>
+<?php include 'view/footer.php'; ?>
 

@@ -18,7 +18,7 @@
     <ul>
         
         <li>
-            <a href="memory/memory_manager">Click here to manage your photos</a>
+            <a href="memory_manager">Click here to manage your photos</a>
         </li>
         <li>
             <a href="memory_book/index.php">Memory Book</a>

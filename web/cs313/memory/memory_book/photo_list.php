@@ -1,4 +1,4 @@
-<?php include 'memory/view/header.php'; ?>
+<?php include 'view/header.php'; ?>
 <main>
     <h1>Memory Book</h1>
 
@@ -37,7 +37,7 @@ if(isset($_POST['button'])){    //trigger button click
 
   $search=$_POST['search'];
 
-  $query=mysql_query("SELECT * FROM people WHERE peopleName like '%{$search}%' ");
+  $query=postgresql_query("SELECT * FROM people WHERE peopleName like '%{$search}%' ");
 
 if (mysql_num_rows($query) > 0) {
   while ($row = mysql_fetch_array($query)) {

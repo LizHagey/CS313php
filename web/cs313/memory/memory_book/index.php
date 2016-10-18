@@ -1,9 +1,9 @@
 <?php
-require('memory/util/main.php');
-require('memory/util/tags.php');
-require('memory/model/database.php');
-require('memory/model/photo_db.php');
-require('memory/model/people_db.php');
+require('util/main.php');
+require('util/tags.php');
+require('model/database.php');
+require('model/photo_db.php');
+require('model/people_db.php');
 
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {
@@ -30,7 +30,7 @@ switch( $action ) {
             FILTER_VALIDATE_INT);   
         if ($photo_id == NULL || $photo_id == FALSE) {
             $error = 'Missing or incorrect product id.';
-            include('memory/errors/error.php');
+            include('errors/error.php');
         } else {
             $people = get_people();
             $photo = get_photo($photo_id);
@@ -47,7 +47,7 @@ switch( $action ) {
         $image_filename = '../images/' . $code . '.jpg';
         $image_alt = 'Image: ' . $code . '.jpg';
         
-        include('memory/memory_book/photo_view.php');
+        include('memory_book/photo_view.php');
         break;
   
 }
