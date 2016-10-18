@@ -23,7 +23,7 @@ switch( $action ) {
         $people_name = get_people_name($people_id);
         $people = get_people();
         $photos = get_photos_by_people_name($people_id);
-        include('memory/memory_book/photo_list.php');
+        include('memory_book/photo_list.php');
         break;
     case 'view_photo' :
         $photo_id = filter_input(INPUT_GET, 'photo_id', 
