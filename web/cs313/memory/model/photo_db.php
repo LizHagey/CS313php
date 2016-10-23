@@ -77,7 +77,7 @@ function edit_photo($photo, $people_id, $photoName, $dateTaken, $photoCaption, $
         photoName = :photoName,
         dateTaken = :dateTaken,
         photoCaption = :photoCaption,
-        photoStory = :photoStory,
+        photoStory = :photoStory
         WHERE photoID = :photo';
   
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
