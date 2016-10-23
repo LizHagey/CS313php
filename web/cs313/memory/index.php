@@ -11,7 +11,7 @@
 
 <!-- the body section -->
 <body>
-    <header><img src="images/Logo.jpg" alt="memoryLogo"></header>
+    <header><img src="images/memoryLogo.jpg" alt="memoryLogo"></header>
 
 <main>
     <h1>Menu</h1>
