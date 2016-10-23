@@ -11,4 +11,4 @@
 
 <!-- the body section -->
 <body>
-    <header><a href ="memory/index.php"><img src="memory/images/Logo.jpg" alt="Logo"></a></header>
+    <header><a href ="memory/index.php"><img src="memory/images/memoryLogo.jpg" alt="Logo"></a></header>

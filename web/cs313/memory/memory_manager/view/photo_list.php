@@ -21,22 +21,15 @@
     <section>
         <!-- display a table of recipes -->
         <h2><?php echo $people_name; ?></h2>
-        <table>
-            <tr>
-                <th id="one">Name</th>
-                <th id="one">Date</th>
-                <th id="wide">Photo Caption</th>
-                <th id="wide">Photo Story</th>
-                <th id="two">&nbsp;</th>
-                <th id="two">&nbsp;</th>
-            </tr>
-            <?php foreach ($photos as $photo) : ?>
-            <tr>
-                <td><?php echo $photo['photoName']; ?></td>
-                <td><?php echo $photo['dateTaken']; ?></td>
-                <td class="wide"><?php echo $photo['photoCaption']; ?></td>
-                <td><div id="wide2"><?php echo $photo['photoStory']; ?></div></td>
-                
+        <?php foreach ($photos as $photo) : ?>
+            
+            <p><strong>Name: </strong><?php echo $photo['photoName']; ?> </p>
+            <p><strong>Date Taken: </strong><?php echo $photo['dateTaken']; ?> </p>
+            <p><strong>Caption: </strong><?php echo $photo['photoCaption']; ?> </p>
+            <p><strong>Story: </strong><?php echo $photo['photoStory']; ?> </p>
+             
+            <table>
+                <tr>
                 <td><form action="." method="post">
                     <input type="hidden" name="action"
                            value="delete_photo">
@@ -56,8 +49,9 @@
                     <input type="submit" value="Edit">
                 </form></td>
             </tr>
-            <?php endforeach; ?>
+           
         </table>
+             <?php endforeach; ?>
         <p><a href="?action=show_add_form">Add Memory</a></p>
         <p class="last_paragraph"><a href="?action=list_people">List Memories</a></p>        
     </section>

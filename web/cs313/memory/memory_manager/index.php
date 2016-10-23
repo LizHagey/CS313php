@@ -110,6 +110,7 @@ switch( $action ) {
         $dateTaken = filter_input(INPUT_POST, 'dateTaken');
         $photoCaption = filter_input(INPUT_POST, 'photoCaption');
         $photoStory = filter_input(INPUT_POST, 'photoStory');
+        $photo = filter_input(INPUT_POST, 'photoID');
         if ($people_id == NULL || $people_id == FALSE) {
             $error = "Choose a persons name.";
             include('memory/errors/error.php');
