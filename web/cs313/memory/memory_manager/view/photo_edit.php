@@ -28,6 +28,10 @@
         
         <label>Photo Story: </label>
         <textarea name="photoStory" cols="30" rows="20"><?php echo $photo['photoStory']?></textarea>
+        <br>
+        
+        <label>Name of jpg:</label>
+        <input type="text" name="imageCode" value='<?php echo htmlspecialchars($photo['imageCode'])?>'/>
         <br><br><br>
 
         <input type="hidden" name="photoID" value='<?php echo $photo['photoID']?>'/>

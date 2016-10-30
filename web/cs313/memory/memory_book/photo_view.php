@@ -13,7 +13,6 @@
             </p>
         </div>
        
-        <?php $name_tags = add_tags($photoName); ?>
         <?php $date_tags = add_tags($dateTaken); ?>
         <?php $caption_tags = add_tags($photoCaption); ?>
         <?php $story_tags = add_tags($photoStory); ?>
@@ -25,6 +24,8 @@
             
         </div>
     </section>
+       <p><a href="../memory_book/index.php">Return to Menu</a></p>
+        <p><a href="../index.php">Home</a></p>
 </main>
 <?php include 'view/footer.php'; ?>
 

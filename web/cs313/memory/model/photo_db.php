@@ -46,12 +46,12 @@ function delete_photo($photo_id) {
     }
 }
 
-function add_photo($people_id, $photoName, $dateTaken, $photoCaption, $photoStory) {
+function add_photo($people_id, $photoName, $dateTaken, $photoCaption, $photoStory, $imageCode) {
     global $db;
     $query = 'INSERT INTO photos
-                 (peopleID, photoName, dateTaken, photoCaption, photoStory)
+                 (peopleID, photoName, dateTaken, photoCaption, photoStory, imageCode)
               VALUES
-                 (:people_id, :photoName, :dateTaken, :photoCaption, :photoStory)';
+                 (:people_id, :photoName, :dateTaken, :photoCaption, :photoStory, :imageCode)';
     
 
     try {
@@ -61,6 +61,7 @@ function add_photo($people_id, $photoName, $dateTaken, $photoCaption, $photoStor
     $statement->bindValue(':dateTaken', $dateTaken);
     $statement->bindValue(':photoCaption', $photoCaption);
     $statement->bindValue(':photoStory', $photoStory);
+    $statement->bindValue(':imageCode', $imageCode);
     $statement->execute();
     $statement->closeCursor();
     }catch(PDOException $e) {
@@ -68,7 +69,7 @@ function add_photo($people_id, $photoName, $dateTaken, $photoCaption, $photoStor
     }
 }
 
-function edit_photo($photo, $people_id, $photoName, $dateTaken, $photoCaption, $photoStory) {
+function edit_photo($photo, $people_id, $photoName, $dateTaken, $photoCaption, $photoStory, $imageCode) {
     global $db;
     
      $query = 'UPDATE photos
@@ -77,7 +78,8 @@ function edit_photo($photo, $people_id, $photoName, $dateTaken, $photoCaption, $
         photoName = :photoName,
         dateTaken = :dateTaken,
         photoCaption = :photoCaption,
-        photoStory = :photoStory
+        photoStory = :photoStory,
+        imageCode = :imageCode
         WHERE photoID = :photo';
   
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -89,10 +91,11 @@ function edit_photo($photo, $people_id, $photoName, $dateTaken, $photoCaption, $
     $statement->bindValue(':dateTaken', $dateTaken);
     $statement->bindValue(':photoCaption', $photoCaption);
     $statement->bindValue(':photoStory', $photoStory);
+    $statement->bindValue(':imageCode', $imageCode);
     $statement->bindValue(':photo', $photo);
     $statement->execute();
     $statement->closeCursor();
-    echo "Successfully updated the photo";
+    echo "Successfully updated the Memory";
     }catch(PDOException $e) {
             display_db_error($e->getMessage());
     }

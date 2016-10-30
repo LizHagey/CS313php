@@ -28,6 +28,10 @@
         
         <label>Photo Story:</label>
         <textarea name="photoStory" cols='30' rows='20'></textarea>
+        <br>
+        
+        <label>Name of photo: <i>ex. if photo is named kids.jpg you would put kids</i></label>
+        <input type="text" name="imageCode"/>
         <br><br>
 
         <label>&nbsp;</label>
@@ -35,7 +39,9 @@
         <br>
     </form>
     <p class="last_paragraph">
-        <a href="index.php?action=list_photos">View Memory List</a>
+        <a href="index.php?action=list_photos">Return to Memory Manager</a>
+        <br><br>
+        <a href="../img_upload/index.php">Upload a photo</a>
     </p>
     
     <div id="formatting_directions">

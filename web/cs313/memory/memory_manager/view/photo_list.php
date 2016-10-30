@@ -27,7 +27,8 @@
             <p><strong>Date Taken: </strong><?php echo $photo['dateTaken']; ?> </p>
             <p><strong>Caption: </strong><?php echo $photo['photoCaption']; ?> </p>
             <p><strong>Story: </strong><?php echo $photo['photoStory']; ?> </p>
-             
+            <p><strong>Image Name: </strong><?php echo $photo['imageCode']; ?> </p>
+              
             <table>
                 <tr>
                 <td><form action="." method="post">
@@ -52,8 +53,14 @@
            
         </table>
              <?php endforeach; ?>
-        <p><a href="?action=show_add_form">Add Memory</a></p>
-        <p class="last_paragraph"><a href="?action=list_people">List Memories</a></p>        
+            <br>
+        <h2>To view photo with the information click <a href="../index.php">Home</a> 
+                or the header and then Memory Book.</h2>
+        <p><a href="?action=show_add_form">Add Memory</a>
+        <br><br>
+        <a href="../img_upload/index.php">Upload a photo</a></p>
+        <p class="last_paragraph"><a href="?action=list_people">Add or Delete Person</a>
+            <br><br><a href="../index.php">Home</a></p>        
     </section>
 </main>
 <?php include '../view/footer.php'; ?>

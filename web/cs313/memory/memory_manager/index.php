@@ -85,12 +85,13 @@ switch( $action ) {
         $dateTaken = filter_input(INPUT_POST, 'dateTaken');
         $photoCaption = filter_input(INPUT_POST, 'photoCaption');
         $photoStory = filter_input(INPUT_POST, 'photoStory');
+        $imageCode = filter_input(INPUT_POST, 'imageCode');
         if ($people_id == NULL || $people_id == FALSE || $photoName == NULL || 
                 $dateTaken == NULL) {
             $error = "Invalid data. Check all fields and try again.";
-            include('memory/errors/error.php');
+            include('../errors/error.php');
         } else { 
-            add_photo($people_id, $photoName, $dateTaken, $photoCaption, $photoStory);
+            add_photo($people_id, $photoName, $dateTaken, $photoCaption, $photoStory, $imageCode);
           header("Location: .?people_id=$people_id");
         }
         break;
@@ -100,7 +101,7 @@ switch( $action ) {
                 FILTER_VALIDATE_INT);
         $peoples = get_people();
         $photo = get_photo($photo_id);
-        include('memory/memory_manager/view/photo_edit.php'); 
+        include('../memory_manager/view/photo_edit.php'); 
         break;
     
     case 'edit_photo' :
@@ -110,12 +111,13 @@ switch( $action ) {
         $dateTaken = filter_input(INPUT_POST, 'dateTaken');
         $photoCaption = filter_input(INPUT_POST, 'photoCaption');
         $photoStory = filter_input(INPUT_POST, 'photoStory');
+        $imageCode = filter_input(INPUT_POST, 'imageCode');
         $photo = filter_input(INPUT_POST, 'photoID');
         if ($people_id == NULL || $people_id == FALSE) {
             $error = "Choose a persons name.";
-            include('memory/errors/error.php');
+            include('../errors/error.php');
         }else { 
-            edit_photo($photo, $people_id, $photoName, $dateTaken, $photoCaption, $photoStory);
+            edit_photo($photo, $people_id, $photoName, $dateTaken, $photoCaption, $photoStory, $imageCode); 
             header("Location: .?people_id=$people_id");
         } 
         break;
